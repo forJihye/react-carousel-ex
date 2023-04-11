@@ -1,25 +1,20 @@
-import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import Carousel3dEx2 from './components/Carousel3dEx2';
+import Carousel3dEx1 from './components/Carousel3dEx1';
+import BasicSlider from './components/BasicSlider';
+import InfiniteCarousel from './components/InfiniteCarousel';
+
+// const getPlaceholderImage = (length: number) => Array.from({length}, (_, i) => `https://picsum.photos/1080/720?random=${i+1}`);
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <h1 style={{textAlign: 'center'}}>React Carousel</h1>
+      <BasicSlider />
+      <Carousel3dEx1 />
+      <Carousel3dEx2 />
+      <InfiniteCarousel />
+    </>
   );
 }
 
